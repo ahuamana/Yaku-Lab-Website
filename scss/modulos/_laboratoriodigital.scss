@@ -1,0 +1,218 @@
+.laboratoriodigital{
+
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    height: 100%;
+    //border: springgreen solid 1px;
+    display: block;
+    position: static;
+
+    &__triangleTop{
+            
+        &--triangle{
+           // display: inline-block;
+            width: 100%;
+            //border: springgreen solid 1px;
+            height: 50px;
+            background: linear-gradient(to bottom left, transparent 49.5%, #F0E5CF 50%);
+        }
+    }
+
+    &__body{
+
+        background: #F0E5CF;
+        //border: $base-color;
+        display: flex;
+        padding: 30px;
+        padding-top: 50px;
+        
+
+        &__left{
+            width: 30%;
+            position: static;
+            padding: 20px;
+
+            &__contenedorCircular{
+
+                //border: pink dotted 1px;
+                display: block;
+                padding: 20px;
+
+                &--img{
+
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+
+
+            }
+
+            &__contenedorContenido{
+
+                
+                text-align: center;
+                
+                &--title{
+                    color: $base-color;
+                }
+
+                &--description{
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &__right{
+            width: 70%;
+            
+
+            &__contenedorTop{
+
+                text-align: end;
+                //border: teal dotted ;
+                white-space: nowrap;
+
+               &__inside{
+                
+                position: relative;
+                //border: khaki dotted 1px;
+                display: inline-flex;
+                justify-content: flex-end;
+                height: 100%;
+                width: 100%;
+               
+
+                    &--icon{
+                        
+                        display: inline-block;
+                        background-color: white;
+                        color: $base-color;
+                        padding: 8px;
+                        padding-top: 10px;
+                        border-radius: 8px 0px 0px 8px;
+
+                    }
+
+                    &--input{
+                        display: inline-block;
+                        background: white;
+                        color: $base-color;
+                        border: none;
+                        border-radius: 0px 8px 8px 0px;
+                        &:focus{
+                            color: $base-color;
+                            outline-offset: 0px;
+                            outline: $base-color;
+                            
+                        }
+                    }
+               }
+            }
+
+            &__contenedorMiddle{
+                color: $base-color;
+                //border: red dotted 1px;
+                align-content: center;
+                margin: auto;
+                text-align: center;
+                width: 80%;
+                margin-top: 50px;
+            }
+
+            &__contenedorBottom{
+                
+                
+
+                &--subtittle{
+
+                    display: inline-block;
+                    margin-left: 10px;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                }
+
+                &__contenedorMain{
+
+                    
+                    display: flex;
+                    justify-content: space-between;
+
+                    &__card{
+                        border-radius: 5px;
+                        display: block;
+                        width: 100%;
+                        background-color: white;
+                        text-align: center;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        //margin: auto;
+
+                        &__contenedorimg{
+
+                            width: 100%;
+                            margin: auto;
+                            //border: dotted 1px gold;
+                            
+                            
+                            &--img{
+                                width: 60%;
+                                margin: auto;
+                                height: 100%;
+                                padding: 30px;
+                                text-align: center;
+                                display: block;
+                            }
+                        }
+
+                        &--name{
+                            display: block ;
+                            //size: 50px;
+                            font-size: 20px;
+                        }
+
+                        &--username{
+                            display: inline-block;
+                            border-radius: 15px;
+                            margin: 5px 0px;
+                            padding: 5px;
+                            border: black solid 1px;
+                        }
+
+                        &--nivel{
+                            margin: auto;
+                            margin-bottom: 10px;
+                            font-size: 10px;
+                            display: block;
+                            align-items: center;
+                            background-color: black;
+                            border-radius: 10px;
+                            color: white;
+                            padding: 8px;
+                            border: none;
+                        }
+                    }
+
+                }
+                
+                //background-color: green;
+            }
+            
+        }
+    }
+    
+    .levelgold{
+        background-color: #F0A500;
+        
+    }
+
+    .levelsilver{
+        background-color: lightgray;
+    }
+
+    .levelbronze{
+        background-color: brown;
+    }
+
+}

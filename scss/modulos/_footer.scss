@@ -1,0 +1,34 @@
+.footer{
+    background-color: #4B6587;
+    color: white;
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+
+    &__contenedor{
+
+        &__nav{
+
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            &--enlaces{
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        &__contact{
+
+            &--title{
+                font-size: 15px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+
+    }
+}

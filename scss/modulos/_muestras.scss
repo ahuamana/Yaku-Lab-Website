@@ -1,0 +1,243 @@
+.contenedorMuestras{
+
+    width: 80%;
+    max-width: 1080px;
+    //height: 50px;
+    //border: blue solid 1px;
+    margin: auto;
+    display: block;
+    position: static;
+    
+    &__triangleTop{
+            
+           // display: inline-block;
+            
+            &--triangle{
+            width: 100%;
+            //border: springgreen solid;
+            height: 50px;
+            background: linear-gradient(to top right, transparent 49.5%, #F0E5CF 50%);
+            display: block;
+            }
+    }
+
+    &__body{
+
+        background: white;
+        border: $base-color;
+        display: flex;
+        padding: 30px;
+        padding-top: 50px;
+        
+
+        &__left{
+            width: 30%;
+            padding: 20px;
+
+            &__contenedorCircular{
+
+                //border: pink dotted 1px;
+                display: block;
+                padding: 20px;
+
+                &--img{
+
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+
+
+            }
+
+            &__contenedorContenido{
+
+                
+                text-align: center;
+                
+                &--title{
+                    color: $base-color;
+                }
+
+                &--description{
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &__right{
+            width: 70%;
+            
+
+            &__contenedorTop{
+
+                text-align: end;
+                //border: teal dotted ;
+                white-space: nowrap;
+
+               &__inside{
+                
+                position: relative;
+                //border: khaki dotted 1px;
+                
+                display: inline-flex;
+                justify-content: flex-end;
+                height: 100%;
+                width: 100%;
+
+                    &--icon{
+                        
+                        display: inline-block;
+                        background-color: $base-color;
+                        color: white;
+                        padding: 8px;
+                        padding-top: 10px;
+                        border-radius: 8px 0px 0px 8px;
+
+                    }
+
+                    &--input{
+                        display: inline-block;
+                        background: $base-color;
+                        color: white;
+                        border: none;
+                        border-radius: 0px 8px 8px 0px;
+                        &:focus{
+                            color: white;
+                            outline-offset: 0px;
+                            outline: white;
+                            
+                        }
+
+                        &::placeholder{
+                            color: white;
+                        }
+                    }
+               }
+            }
+
+            &__contenedorMiddle{
+                color: $base-color;
+                //border: red dotted 1px;
+                align-content: center;
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                margin-top: 50px;
+                margin-bottom: 10px;
+            }
+
+            &__contenedorBottom{
+                
+                &--subtittle{
+
+                    display: inline-block;
+                    margin-left: 10px;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                }
+
+                &__contenedorMain{
+
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    //border: khaki dotted 1px;
+
+                    &__card{
+                        display: block;
+                        width:  calc(100% /4 - 8px);
+                        background-color: white;
+                        text-align: center;
+                        //margin: auto;
+                        margin-top: 20px;
+                        border-radius: 5px;
+
+                        &__contenedorimg{
+
+                            width: 100%;
+                            margin: auto;
+                            height: 70%;
+                            //border: dotted 1px gold;
+                            
+                            
+                            &--img{
+                                width: 100%;
+                                max-width: 100%;
+                                margin: auto;
+                                height: 100%;
+                                border-radius: 5px 5px 5px 5px;
+                                display: block;
+                            }
+                        }
+
+                        &__contenedorData{
+
+                            height: 30%;
+                            background-color: #D1E8E4;
+                            margin-top: 5px;
+                            
+                            padding-top: 5px;
+                            border-radius: 5px;
+
+                            &--name{
+                                display: block ;
+                                //size: 50px;
+                                margin-top: 5px;
+                                color: black;
+                                font-weight: bold;
+                                font-size: 18px;
+                                &__contenedorflag{
+                                    display: inline-block;
+                                    position: absolute;
+                                    &--img{
+                                        width: 20px;
+                                        margin-left: 5px;
+                                        
+                                    }
+
+                                }
+                            }
+    
+                            &--username{
+                                display: inline-block;
+                                border-radius: 15px;
+                                margin: 5px 0px;
+                                padding: 5px;
+                                border: black solid 1px;
+                            }
+    
+                            &--nivel{
+                                margin: auto;
+                                border-radius: 8px;
+                                border: 0px;
+                                margin-bottom: 10px;
+                                font-size: 10px;
+                                display: block;
+                                align-items: center;
+                                background-color: #E02401;
+                                color: white;
+                                padding: 8px;
+
+                                
+                            }
+                        }
+                    }
+
+                }
+                
+                //background-color: green;
+            }
+            
+        }
+    }
+
+    .ausencia{
+        background-color: #1597E5;
+    }  
+    
+    .presencia{
+        background-color: #E02401;
+    }
+    
+}

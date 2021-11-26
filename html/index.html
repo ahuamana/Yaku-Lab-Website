@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--SCRIPT CDN PARA USAR CHART.JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+    <title> YAKU-LIMPIA</title>
+    
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cosmo/bootstrap.min.css" integrity="sha384-5QFXyVb+lrCzdN228VS3HmzpiE7ZVwLQtkt+0d9W43LQMzz4HBnnqvVxKg6O+04d" crossorigin="anonymous">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/15754d9d10.js" crossorigin="anonymous"></script>
+
+    <!--Google maps links -->
+
+    
+</head>
+
+
+<body>
+    <!-- CABECERA PRINCIPAL-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <img src="img/yaku.png" alt="" height="10">
+            <a class="navbar-brand" href="#"><h3>Yaku Limpia</H3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"></button>
+    
+        <div class="collapse navbar-collapse " id="navbarColor01">
+            <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><p>Laboratorio Virtual</p> </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><p>Proyecto</p></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><p>Mapa</p></a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+    
+
+        <div class="banner" >
+            
+            <h1  class="pbanner">YAKU-LIMPIA</h1><br>
+            <div class="cajaparrafo">
+                <p class="parrafobanner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit amet vel ad exercitationem quos nemo suscipit iusto, a nihil illum incidunt quam natus quae. Eos laudantium tenetur eum quae impedit.</p>
+            <br>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+      
+        <!--GRAFICA DE BARRAS CON CHART.JS-->
+        <div class="contenedor-graf">
+            <h1 class="titulo1">Gráficos de las muestras registradas en Yaku Limpia</h1>
+            <div class="grafico barras">
+                <h2 class="titulo2"><b>Gráfica de barras</b></h2>
+             <canvas id="miChart" width="400" height="400"></canvas>
+            </div>
+            <div class="grafico circular">
+                 <h2 class="titulo2"><b>Gráfica circular</b></h2>
+                 <canvas id="miChart2" width="400" height="400"></canvas>
+             </div>
+        </div>
+      
+       
+    
+
+
+
+
+   
+
+           <!---PARTE DE LAS 3 CARDS-->
+        <div class="grid-container">
+
+            <div class="caja contenido">
+                <div class="titulo2">
+                    <h1>Bienvenido a la página oficial de <b>YAKU-LIMPIA</b></h1>
+                </div>
+                <div class="descripcion">
+                    <h3>Yaku Limpia cuenta con múltiples servicios, entre ellos un laboratorio virtual que te permite realizar experimentos mientras aprendes y ganas puntos, un apartado de muestras, que permite conocer el total de muestras registradas con nuestro aplicativo y un Dashboard, para conocer el estado de los usuarios y la información registrada.
+                    </h3>
+                </div>
+            </div>
+            
+            <!--Inicio de los cards-->
+            <section class="about-services">
+                <div class="contenedor">
+                    <h2 class="titulo2">Nuestros servicios</h2>
+                </div>
+                <div class="servicio-cont">
+                    
+                        <div class="servicio-ind">
+                            <img src="../assets/lab-virtual.png">
+                            <h3>Laboratorio virtual</h3>
+                            <p>Visualiza nuestros retos.</p>
+                            <a href="#" class="boton btn-blue">Ver más</a>
+                        </div>
+                   
+                    
+                        <div class="servicio-ind">
+                            <img src="../assets/muestras.png">
+                            <h3>Muestras</h3>
+                            <p>Visualiza el registro de nuestras muestras</p>
+                            <a href="#" class="boton btn-blue">Ver más</a>
+                        </div>
+                   
+
+                    <div class="servicio-ind">
+                        <img src="../assets/dash.png">
+                        <h3>Dashboard</h3>
+                        <p>Visualiza toda nuestra data registrada.</p>
+                        <a href="#" class="boton btn-blue">Ver más</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>    
+        
+        
+            <!--Mapa de calor-->
+
+            <div class="contenedorMapadecalor">
+                
+                <div class="contenedorMapadecalor__triangleTop">
+                    <div class="contenedorMapadecalor__triangleTop--triangle">
+
+                    </div>
+                </div>
+                
+                <div class="contenedorMapadecalor__body">
+
+                    <div class="contenedorMapadecalor__body__left">
+                        <div class="contenedorMapadecalor__body__left__contenedorCircular">
+                            <img src="../assets/pin_de_mapa.png" alt="" class="contenedorMuestras__body__left__contenedorCircular--img">
+                        </div>
+
+                        <div class="contenedorMapadecalor__body__left__contenedorContenido">
+
+                            <h3 class="contenedorMapadecalor__body__left__contenedorContenido--title">Mapa de calor</h3>
+                            <p class="contenedorMapadecalor__body__left__contenedorContenido--description">Encuentra los ríos mas limpios y mantenido alrededor del mundo</p>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="contenedorMapadecalor__body__right">
+                        <div class="contenedorMapadecalor__body__right--mapa" id="map"></div>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+            
+            <!-- Contenedor Muestras -->
+            <div class="contenedorMuestras">
+                <div class="contenedorMuestras__triangleTop">
+                    <div class="contenedorMuestras__triangleTop--triangle">
+
+                    </div>
+                </div>
+
+                <div class="contenedorMuestras__body">
+                    <div class="contenedorMuestras__body__left">
+                        <div class="contenedorMuestras__body__left__contenedorCircular">
+                            <img src="../assets/microbiology.png" alt="" class="contenedorMuestras__body__left__contenedorCircular--img">
+                        </div>
+
+                        <div class="contenedorMuestras__body__left__contenedorContenido">
+
+                            <h3 class="contenedorMuestras__body__left__contenedorContenido--title">Muestras Microbiológicas</h3>
+                            <p class="contenedorMuestras__body__left__contenedorContenido--description">Visualiza las muestras de agua registradas, los autores de las muestras y el estado del agua registrada.</p>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="contenedorMuestras__body__right">
+
+                        <div class="contenedorMuestras__body__right__contenedorTop">
+
+                            <section class="contenedorMuestras__body__right__contenedorTop__inside">
+                                <span class="contenedorMuestras__body__right__contenedorTop__inside--icon"> <i class="fa fa-search"> </i></span>
+                                <input class="contenedorMuestras__body__right__contenedorTop__inside--input" type="search" name="" id="site-search" placeholder="Buscar...">  
+                            </span>
+                            
+
+                        </div>
+
+                        <div class="contenedorMuestras__body__right__contenedorMiddle">
+                            <h4 class="contenedorMuestras__body__right__contenedorMiddle--title">
+                                MUESTRAS
+                            </span>
+                            
+                        </div>
+
+                        <div class="contenedorMuestras__body__right__contenedorBottom">
+
+                            
+                            <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain">
+
+                                <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/test01.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData">
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name">
+                                            Peru <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag">
+                                                <img src="../assets/peru.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag--img">
+                                            </div>
+                                        </span>
+        
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--username">
+                                            @lopez
+                                        </span>
+        
+                                        <button class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--nivel presencia">
+                                            Presencia de bacterias
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/test03.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData">
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name">
+                                            Argentina  <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag">
+                                                            <img src="../assets/argentina.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag--img">
+                                                       </div>
+                                        </span>
+        
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--username">
+                                            @cindy
+                                        </span>
+        
+                                        <button class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--nivel ausencia">
+                                            Ausencia de bacterias
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/test01.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData">
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name">
+                                            Brazil <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag">
+                                                <img src="../assets/brasil.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag--img">
+                                            </div>
+                                        </span>
+        
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--username">
+                                            @ahuaman
+                                        </span>
+        
+                                        <button class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--nivel">
+                                            Presencia de bacterias
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/test02.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData">
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name">
+                                            Colombia <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag">
+                                                <img src="../assets/colombia.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag--img">
+                                           </div>
+                                        </span>
+        
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--username">
+                                            @pedrito
+                                        </span>
+        
+                                        <button class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--nivel ausencia">
+                                            Ausencia de bacterias
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/test01.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData">
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name">
+                                            Ecuador <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag">
+                                                <img src="../assets/ecuador.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag--img">
+                                           </div>
+                                        </span>
+        
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--username">
+                                            @msantiago
+                                        </span>
+        
+                                        <button class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--nivel">
+                                            Presencia de bacterias
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/test02.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData">
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name">
+                                            Peru <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag">
+                                                <img src="../assets/peru.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag--img">
+                                           </div>
+                                        </span>
+        
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--username">
+                                            @carl
+                                        </span>
+        
+                                        <button class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--nivel ausencia">
+                                            Ausencia de bacterias
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/test04.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData">
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name">
+                                            USA <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag">
+                                                <img src="../assets/united-states.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag--img">
+                                           </div>
+                                        </span>
+        
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--username">
+                                            @mark
+                                        </span>
+        
+                                        <button class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--nivel presencia">
+                                            Presencia de bacterias
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/test03.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData">
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name">
+                                            Bolivia <div class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag">
+                                                <img src="../assets/bolivia.png" alt="" class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag--img">
+                                           </div>
+                                        </span>
+        
+                                        <span class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--username">
+                                            @cmorales
+                                        </span>
+        
+                                        <button class="contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--nivel ausencia">
+                                            Ausencia de bacterias
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+                            
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+                
+
+            </div>
+
+
+            <!--Laboratorio Digital-->
+
+            <div class="laboratoriodigital">
+                <div class="laboratoriodigital__triangleTop">
+                    <div class="laboratoriodigital__triangleTop--triangle">
+
+                    </div>
+                </div>
+
+                <div class="laboratoriodigital__body">
+                    <div class="laboratoriodigital__body__left">
+                        <div class="laboratoriodigital__body__left__contenedorCircular">
+                            <img src="../assets/lab_girl.png" alt="" class="laboratoriodigital__body__left__contenedorCircular--img">
+                        </div>
+
+                        <div class="laboratoriodigital__body__left__contenedorContenido">
+
+                            <h3 class="laboratoriodigital__body__left__contenedorContenido--title">Laboratorio Digital</h3>
+                            <p class="laboratoriodigital__body__left__contenedorContenido--description">Visualiza los retos planteados, los participantes de nuestra comunidad y las medallas y logros obtenidos por los experimentores.</p>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="laboratoriodigital__body__right">
+
+                        <div class="laboratoriodigital__body__right__contenedorTop">
+
+                            <section class="laboratoriodigital__body__right__contenedorTop__inside">
+                                <span class="laboratoriodigital__body__right__contenedorTop__inside--icon"> <i class="fa fa-search"> </i></span>
+                                <input class="laboratoriodigital__body__right__contenedorTop__inside--input" type="search" name="" id="site-search" placeholder="Buscar...">  
+                            </span>
+                            
+
+                        </div>
+                            
+                        <div class="laboratoriodigital__body__right__contenedorMiddle">
+                            <h4 class="laboratoriodigital__body__right__contenedorMiddle--title">
+                                MEDALLAS Y USUARIOS
+                            </span>
+                            
+                        </div>
+
+                        <div class="laboratoriodigital__body__right__contenedorBottom">
+
+                            <h5 class="laboratoriodigital__body__right__contenedorBottom--subtittle">PARTICIPANTES</h5>
+
+                            <div class="laboratoriodigital__body__right__contenedorBottom__contenedorMain">
+
+                                <div class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/young_man_grenlight.png" alt="" class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <span class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--name">
+                                        Pedro
+                                    </span>
+    
+                                    <span class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--username">
+                                        @pedrito
+                                    </span>
+    
+                                    <button class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--nivel levelgold">
+                                        ORO
+                                    </button>
+                                </div>
+
+                                <div class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/girl_profile.png" alt="" class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <span class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--name">
+                                        Maria
+                                    </span>
+    
+                                    <span class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--username">
+                                        @zmaria
+                                    </span>
+    
+                                    <button class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--nivel levelbronze">
+                                        BRONZE
+                                    </button>
+                                </div>
+
+
+                                <div class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card">
+                                    <div class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg">
+                                        <img src="../assets/young_man_bluelight_tshirt.png" alt="" class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img">
+                                    </div>
+    
+                                    <span class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--name">
+                                        Carlos
+                                    </span>
+    
+                                    <span class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--username">
+                                        @mcarl
+                                    </span>
+    
+                                    <button class="laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--nivel levelsilver">
+                                       PLATA
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            
+                            
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+                
+
+            </div>
+            
+            
+
+
+
+
+            <!---PARTE DE LAS 3 CARDS-->
+    
+    <footer class="footer">
+
+        <div class="footer__contenedor">
+            <nav class="footer__contenedor__nav">
+                <a class="footer__contenedor__nav--enlaces" href="">Inicio</a>
+                <a class="footer__contenedor__nav--enlaces" href="">Sobre el grupo</a>
+                <a class="footer__contenedor__nav--enlaces" href="">Muestras</a>
+                <a class="footer__contenedor__nav--enlaces" href="">Estadisticas</a>
+            </nav>
+
+            <section class="footer__contenedor__contact">
+
+                <h3 class="footer__contenedor__contact--title">Copyright 2021 © Yaku-Limpia todos los derechos reservados</h3>
+
+            </section>
+
+        </div>
+
+    </footer>
+
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwaQikpLZi0uBWw8s4BAB7ON98a4DKSCY&callback=initMap&libraries=&v=weekly&channel=2"
+      async
+    ></script>
+
+    <script src="../javascript/map.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+
+</body>
+
+<script>
+    var ctx = document.getElementById("miChart").getContext("2d");
+
+    var myChart = new Chart(ctx,{
+        type:"bar",
+        data:{
+            labels:["Positivas","Negativas"],
+            datasets:[
+                {
+                    label: "Muestras registradas en Yaku Limpia",
+                    data:[85,42],
+                    backgroundColor: [
+                        'rgb(229,89,50)',
+                        'rgb(66,134,244)'
+                    ]
+                }]
+        }
+    });
+
+
+    var ctx = document.getElementById("miChart2").getContext("2d");
+
+    var myChart = new Chart(ctx,{
+        type:"pie",
+        data:{
+            labels:["Positivas","Negativas"],
+            datasets:[
+                {
+                    label: "Muestras registradas en Yaku Limpia",
+                    data:[85,42],
+                    backgroundColor: [
+                        'rgb(229,89,50)',
+                        'rgb(66,134,244)'
+                    ]
+                }]
+        }
+    });
+</script>
+</html>

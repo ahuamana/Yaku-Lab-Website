@@ -1,0 +1,78 @@
+.contenedorMapadecalor{
+
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    height: 100%;
+    //border: springgreen solid 1px;
+    display: block;
+    position: static;
+
+    &__triangleTop{
+            
+        &--triangle{
+           // display: inline-block;
+            width: 100%;
+            //border: springgreen solid 1px;
+            height: 50px;
+            background: linear-gradient(to bottom left, transparent 49.5%, #F0E5CF 50%);
+        }
+    }
+
+    &__body{
+        background: #F0E5CF;
+        //border: $base-color;
+        display: flex;
+        padding: 30px;
+        padding-top: 50px;
+
+        &__left{
+            width: 30%;
+            position: static;
+            padding: 20px;
+
+            &__contenedorCircular{
+
+                //border: pink dotted 1px;
+                display: block;
+                padding: 20px;
+
+                &--img{
+
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+
+
+            }
+
+            &__contenedorContenido{
+
+                
+                text-align: center;
+                
+                &--title{
+                    color: $base-color;
+                }
+
+                &--description{
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &__right{
+               
+            width: 70%;
+
+            &--mapa{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+
+            
+        }
+    }
+}
